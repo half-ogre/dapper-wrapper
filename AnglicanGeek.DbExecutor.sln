@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lib", "Lib\Lib.csproj", "{0E94BB6B-8213-4B74-B362-A84D42B1AE5D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1B3ADF38-DC0C-4F69-854C-5333D9B1D4EB}"
+	ProjectSection(SolutionItems) = preProject
+		Scripts\AnglicanGeek.DbExecutor.msbuild = Scripts\AnglicanGeek.DbExecutor.msbuild
+		Scripts\Create-NuGetPackage.ps1 = Scripts\Create-NuGetPackage.ps1
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0E94BB6B-8213-4B74-B362-A84D42B1AE5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E94BB6B-8213-4B74-B362-A84D42B1AE5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E94BB6B-8213-4B74-B362-A84D42B1AE5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E94BB6B-8213-4B74-B362-A84D42B1AE5D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

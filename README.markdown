@@ -1,0 +1,1 @@
+This is a simple data access library that has abstractions for the Dapper extension methods and TransactionScope.

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <licenseUrl>https://github.com/anglicangeek/AnglicanGeek.DbExecutor/blob/master/LICENSE.txt</licenseUrl>
+    <projectUrl>https://github.com/anglicangeek/AnglicanGeek.DbExecutor</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <tags>AnglicanGeek Dapper Data</tags>
+  </metadata>
+</package>
