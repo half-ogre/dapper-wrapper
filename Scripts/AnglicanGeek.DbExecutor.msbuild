@@ -13,7 +13,7 @@
   </Target>
 
   <Target Name="CreateNuGetPackage" DependsOnTargets="Build">
-    <Exec WorkingDirectory="..\Lib" Command="..\3rdParty\NuGet\nuget.exe pack -OutputDirectory ..\"/>
+    <Exec WorkingDirectory="..\Lib" Command="..\3rdParty\NuGet\nuget.exe pack -Prop Configuration=$(Configuration) -OutputDirectory ..\"/>
   </Target>
 
 </Project>
