@@ -1,5 +1,5 @@
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\.nuget\nuget.targets" />
+  <Import Project=".\.nuget\nuget.targets" />
     
   <PropertyGroup Condition="'$(Configuration)' == ''">
     <Configuration>Debug</Configuration>
@@ -10,15 +10,15 @@
   </PropertyGroup>
 
   <Target Name="Clean">
-    <MSBuild Projects="..\DbExecutor.sln" Targets="Clean" Properties="Configuration=$(Configuration)"/>
+    <MSBuild Projects=".\DbExecutor.sln" Targets="Clean" Properties="Configuration=$(Configuration)"/>
   </Target>
 
   <Target Name="Build" DependsOnTargets="Clean">
-    <MSBuild Projects="..\DbExecutor.sln" Targets="Build" Properties="Configuration=$(Configuration)"/>
+    <MSBuild Projects=".\DbExecutor.sln" Targets="Build" Properties="Configuration=$(Configuration)"/>
   </Target>
 
   <Target Name="Package" DependsOnTargets="Build;CheckPrerequisites">
-    <Exec WorkingDirectory="..\DbExecutor" Command="$(PackCommand)"/>
+    <Exec WorkingDirectory=".\DbExecutor" Command="$(PackCommand)"/>
   </Target>
 
 </Project>
