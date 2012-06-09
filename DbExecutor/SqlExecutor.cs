@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Data.SqlClient;
-using AnglicanGeek.Dapper;
+using Dapper;
 
 namespace DbExecutor
 {

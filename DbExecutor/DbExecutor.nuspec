@@ -10,5 +10,8 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
     <tags>anglicangeek the-half-ogre dapper data</tags>
+    <dependencies>
+      <dependency id="Dapper" version="1.8" />
+    </dependencies>
   </metadata>
 </package>

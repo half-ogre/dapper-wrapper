@@ -4,3 +4,4 @@ obj
 *.suo
 DbExecutor*.nupkg
 _ReSharper*
+packages

@@ -1,7 +1,12 @@
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-
+  <Import Project="..\.nuget\nuget.targets" />
+    
   <PropertyGroup Condition="'$(Configuration)' == ''">
     <Configuration>Debug</Configuration>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackCommand>$(NuGetCommand) pack -p Configuration=$(Configuration) -o ..\</PackCommand>
   </PropertyGroup>
 
   <Target Name="Clean">
@@ -12,8 +17,8 @@
     <MSBuild Projects="..\DbExecutor.sln" Targets="Build" Properties="Configuration=$(Configuration)"/>
   </Target>
 
-  <Target Name="CreateNuGetPackage" DependsOnTargets="Build">
-    <Exec WorkingDirectory="..\DbExecutor" Command="..\3rdParty\NuGet\nuget.exe pack -Prop Configuration=$(Configuration) -OutputDirectory ..\"/>
+  <Target Name="Package" DependsOnTargets="Build;CheckPrerequisites">
+    <Exec WorkingDirectory="..\DbExecutor" Command="$(PackCommand)"/>
   </Target>
 
 </Project>
