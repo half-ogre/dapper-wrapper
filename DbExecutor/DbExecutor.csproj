@@ -8,8 +8,8 @@
     <ProjectGuid>{0E94BB6B-8213-4B74-B362-A84D42B1AE5D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AnglicanGeek.DbExecutor</RootNamespace>
-    <AssemblyName>AnglicanGeek.DbExecutor</AssemblyName>
+    <RootNamespace>DbExecutor</RootNamespace>
+    <AssemblyName>DbExecutor</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -51,7 +51,7 @@
     <Compile Include="TransactionScopeWrapper.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Lib.nuspec" />
+    <None Include="DbExecutor.nuspec" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

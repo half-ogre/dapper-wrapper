@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace AnglicanGeek.DbExecutor
+namespace DbExecutor
 {
     public interface IDbExecutor : IDisposable
     {

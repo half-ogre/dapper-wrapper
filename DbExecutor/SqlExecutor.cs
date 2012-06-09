@@ -2,7 +2,7 @@
 using System.Data.SqlClient;
 using AnglicanGeek.Dapper;
 
-namespace AnglicanGeek.DbExecutor
+namespace DbExecutor
 {
     public class SqlExecutor : IDbExecutor
     {

@@ -2,7 +2,7 @@
 using System.Data.SqlClient;
 using System.Transactions;
 
-namespace AnglicanGeek.DbExecutor
+namespace DbExecutor
 { 
     public class SqlExecutorFactory : IDbExecutorFactory
     {

@@ -5,10 +5,10 @@
     <version>$version$</version>
     <authors>$author$</authors>
     <owners>$author$</owners>
-    <licenseUrl>https://github.com/anglicangeek/AnglicanGeek.DbExecutor/blob/master/LICENSE.txt</licenseUrl>
-    <projectUrl>https://github.com/anglicangeek/AnglicanGeek.DbExecutor</projectUrl>
+    <licenseUrl>https://github.com/half-ogre/DbExecutor/blob/master/LICENSE.txt</licenseUrl>
+    <projectUrl>https://github.com/half-ogre/DbExecutor</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
-    <tags>AnglicanGeek Dapper Data</tags>
+    <tags>the-half-ogre dapper data</tags>
   </metadata>
 </package>

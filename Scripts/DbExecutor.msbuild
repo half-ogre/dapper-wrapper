@@ -5,15 +5,15 @@
   </PropertyGroup>
 
   <Target Name="Clean">
-    <MSBuild Projects="..\AnglicanGeek.DbExecutor.sln" Targets="Clean" Properties="Configuration=$(Configuration)"/>
+    <MSBuild Projects="..\DbExecutor.sln" Targets="Clean" Properties="Configuration=$(Configuration)"/>
   </Target>
 
   <Target Name="Build" DependsOnTargets="Clean">
-    <MSBuild Projects="..\AnglicanGeek.DbExecutor.sln" Targets="Build" Properties="Configuration=$(Configuration)"/>
+    <MSBuild Projects="..\DbExecutor.sln" Targets="Build" Properties="Configuration=$(Configuration)"/>
   </Target>
 
   <Target Name="CreateNuGetPackage" DependsOnTargets="Build">
-    <Exec WorkingDirectory="..\Lib" Command="..\3rdParty\NuGet\nuget.exe pack -Prop Configuration=$(Configuration) -OutputDirectory ..\"/>
+    <Exec WorkingDirectory="..\DbExecutor" Command="..\3rdParty\NuGet\nuget.exe pack -Prop Configuration=$(Configuration) -OutputDirectory ..\"/>
   </Target>
 
 </Project>

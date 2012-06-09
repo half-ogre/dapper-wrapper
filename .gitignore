@@ -2,4 +2,5 @@ bin
 obj
 *.user
 *.suo
-AnglicanGeek.DbExecutor*.nupkg
+DbExecutor*.nupkg
+_ReSharper*

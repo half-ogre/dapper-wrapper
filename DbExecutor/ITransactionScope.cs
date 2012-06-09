@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AnglicanGeek.DbExecutor
+namespace DbExecutor
 {
     public interface ITransactionScope : IDisposable
     {

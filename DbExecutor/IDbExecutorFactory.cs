@@ -1,5 +1,5 @@
 ﻿
-namespace AnglicanGeek.DbExecutor
+namespace DbExecutor
 {
     public interface IDbExecutorFactory
     {
