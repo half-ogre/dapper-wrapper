@@ -1,1 +1,1 @@
-This is a simple data access library that has abstractions for the Dapper extension methods and TransactionScope.
+I will not be doing any further development in this repository. Now that Dapper is a lib rather than a source file, I just don't find the need for it.
