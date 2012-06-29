@@ -1,1 +1,1 @@
-I will not be doing any further development in this repository. Now that Dapper is a lib rather than a source file, I just don't find the need for it.
+**I will not be doing any further development in this repository. Now that Dapper is a lib rather than a source file, I just don't find the need for it.**
