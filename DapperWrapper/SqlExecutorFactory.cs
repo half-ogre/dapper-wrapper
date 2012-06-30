@@ -1,34 +1,24 @@
 ﻿using System;
 using System.Data.SqlClient;
-using System.Transactions;
 
-namespace DbExecutor
+namespace DapperWrapper
 { 
     public class SqlExecutorFactory : IDbExecutorFactory
     {
-        readonly string connectionString;
+        readonly string _connectionString;
         
         public SqlExecutorFactory(string connectionString)
         {
             if (string.IsNullOrWhiteSpace(connectionString))
                 throw new ArgumentNullException("connectionString");
-            
-            this.connectionString = connectionString;
+            _connectionString = connectionString;
         }
         
         public IDbExecutor CreateExecutor()
         {
-            var dbConnection = new SqlConnection(connectionString);
-            
+            var dbConnection = new SqlConnection(_connectionString);
             dbConnection.Open();
-
             return new SqlExecutor(dbConnection);
-        }
-
-
-        public ITransactionScope CreateTransactionScope()
-        {
-            return new TransactionScopeWrapper(new TransactionScope());
         }
     }
 }

@@ -1,24 +1,24 @@
 ﻿using System.Transactions;
 
-namespace DbExecutor
+namespace DapperWrapper
 {
     public class TransactionScopeWrapper : ITransactionScope
     {
-        readonly TransactionScope transactionScope;
+        readonly TransactionScope _transactionScope;
         
         public TransactionScopeWrapper(TransactionScope transactionScope)
         {
-            this.transactionScope = transactionScope;
+            _transactionScope = transactionScope;
         }
         
         public void Complete()
         {
-            transactionScope.Complete();
+            _transactionScope.Complete();
         }
 
         public void Dispose()
         {
-            transactionScope.Dispose();
+            _transactionScope.Dispose();
         }
     }
 }

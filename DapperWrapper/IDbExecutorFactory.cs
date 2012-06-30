@@ -1,9 +1,8 @@
 ﻿
-namespace DbExecutor
+namespace DapperWrapper
 {
     public interface IDbExecutorFactory
     {
         IDbExecutor CreateExecutor();
-        ITransactionScope CreateTransactionScope();
     }
 }

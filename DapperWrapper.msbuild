@@ -10,15 +10,15 @@
   </PropertyGroup>
 
   <Target Name="Clean">
-    <MSBuild Projects=".\DbExecutor.sln" Targets="Clean" Properties="Configuration=$(Configuration)"/>
+    <MSBuild Projects=".\DapperWrapper.sln" Targets="Clean" Properties="Configuration=$(Configuration)"/>
   </Target>
 
   <Target Name="Build" DependsOnTargets="Clean">
-    <MSBuild Projects=".\DbExecutor.sln" Targets="Build" Properties="Configuration=$(Configuration)"/>
+    <MSBuild Projects=".\DapperWrapper.sln" Targets="Build" Properties="Configuration=$(Configuration)"/>
   </Target>
 
   <Target Name="Package" DependsOnTargets="Build;CheckPrerequisites">
-    <Exec WorkingDirectory=".\DbExecutor" Command="$(PackCommand)"/>
+    <Exec WorkingDirectory=".\DapperWrapper" Command="$(PackCommand)"/>
   </Target>
 
 </Project>

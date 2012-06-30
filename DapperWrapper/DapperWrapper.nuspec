@@ -5,11 +5,11 @@
     <version>$version$</version>
     <authors>$author$</authors>
     <owners>$author$</owners>
-    <licenseUrl>https://github.com/half-ogre/DbExecutor/blob/master/LICENSE.txt</licenseUrl>
-    <projectUrl>https://github.com/half-ogre/DbExecutor</projectUrl>
+    <licenseUrl>https://github.com/half-ogre/dapper-wrapper/blob/master/LICENSE.txt</licenseUrl>
+    <projectUrl>https://github.com/half-ogre/dapper-wrapper</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
-    <tags>anglicangeek the-half-ogre dapper data</tags>
+    <tags>anglicangeek anglican geek halfogre half-ogre half ogre dapper wrapper dapperwrapper</tags>
     <dependencies>
       <dependency id="Dapper" version="1.8" />
     </dependencies>

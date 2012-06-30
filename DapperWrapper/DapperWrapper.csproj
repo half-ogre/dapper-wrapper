@@ -8,8 +8,8 @@
     <ProjectGuid>{0E94BB6B-8213-4B74-B362-A84D42B1AE5D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DbExecutor</RootNamespace>
-    <AssemblyName>DbExecutor</AssemblyName>
+    <RootNamespace>DapperWrapper</RootNamespace>
+    <AssemblyName>DapperWrapper</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
@@ -55,7 +55,7 @@
     <Compile Include="TransactionScopeWrapper.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="DbExecutor.nuspec">
+    <None Include="DapperWrapper.nuspec">
       <SubType>Designer</SubType>
     </None>
     <None Include="packages.config" />

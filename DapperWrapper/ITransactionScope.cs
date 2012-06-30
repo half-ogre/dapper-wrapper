@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DbExecutor
+namespace DapperWrapper
 {
     public interface ITransactionScope : IDisposable
     {

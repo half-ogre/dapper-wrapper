@@ -2,6 +2,6 @@ bin
 obj
 *.user
 *.suo
-DbExecutor*.nupkg
+DapperWrapper*.nupkg
 _ReSharper*
 packages
