@@ -62,6 +62,21 @@ namespace DapperWrapper
                 commandTimeout,
                 commandType);
         }
+        
+            public SqlMapper.GridReader QueryMultiple(
+            string sql,
+            object param = null, 
+            IDbTransaction transaction = null,
+            int? commandTimeout = default(int?), 
+            CommandType? commandType = default(CommandType?))
+        {
+            return _sqlConnection.QueryMultiple(
+                sql,
+                param,
+                transaction,
+                commandTimeout,
+                commandType);
+        }
 
         public void Dispose()
         {
