@@ -1,17 +1,16 @@
 ﻿using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
 using Dapper;
 
 namespace DapperWrapper
 {
     public class SqlExecutor : IDbExecutor
     {
-        readonly SqlConnection _sqlConnection;
+        readonly IDbConnection _dbConnection;
         
-        public SqlExecutor(SqlConnection sqlConnection)
+        public SqlExecutor(IDbConnection dbConnection)
         {
-            _sqlConnection = sqlConnection;
+            _dbConnection = dbConnection;
         }
 
         public int Execute(
@@ -21,7 +20,7 @@ namespace DapperWrapper
             int? commandTimeout = default(int?),
             CommandType? commandType = default(CommandType?))
         {
-            return _sqlConnection.Execute(
+            return _dbConnection.Execute(
                 sql, 
                 param,
                 transaction,
@@ -37,7 +36,7 @@ namespace DapperWrapper
             int? commandTimeout = default(int?),
             CommandType? commandType = default(CommandType?))
         {
-            return _sqlConnection.Query(
+            return _dbConnection.Query(
                 sql,
                 param,
                 transaction,
@@ -54,7 +53,7 @@ namespace DapperWrapper
             int? commandTimeout = default(int?),
             CommandType? commandType = default(CommandType?))
         {
-            return _sqlConnection.Query<T>(
+            return _dbConnection.Query<T>(
                 sql, 
                 param,
                 transaction,
@@ -65,7 +64,7 @@ namespace DapperWrapper
 
         public void Dispose()
         {
-            _sqlConnection.Dispose();
+            _dbConnection.Dispose();
         }
     }
 }
