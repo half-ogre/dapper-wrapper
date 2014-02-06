@@ -7,4 +7,4 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("DapperWrapper")]
 [assembly: AssemblyDescription("A simple abstraction atop the Dapper extension methods for testability.")]
 [assembly: ComVisible(false)]
-[assembly: AssemblyVersion("0.3.0.0")]
+[assembly: AssemblyVersion("0.4.0.0")]

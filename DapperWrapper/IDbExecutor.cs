@@ -28,5 +28,9 @@ namespace DapperWrapper
             bool buffered = true,
             int? commandTimeout = default(int?),
             CommandType? commandType = default(CommandType?));
+
+        void Open();
+
+        void Close();
     }
 }

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Data;
 using Dapper;
 
@@ -6,10 +7,15 @@ namespace DapperWrapper
 {
     public class SqlExecutor : IDbExecutor
     {
-        readonly IDbConnection _dbConnection;
+        private readonly IDbConnection _dbConnection;
         
         public SqlExecutor(IDbConnection dbConnection)
         {
+            if (dbConnection == null)
+            {
+                throw new ArgumentNullException();
+            }
+
             _dbConnection = dbConnection;
         }
 
@@ -62,6 +68,25 @@ namespace DapperWrapper
                 commandType);
         }
 
+        /// <summary>
+        /// Opens a database connection with the setting specified by the ConnectionString property of the provider-specific Connection object.
+        /// </summary>
+        public void Open()
+        {
+            _dbConnection.Open();
+        }
+
+        /// <summary>
+        /// Closes the connection to the database.
+        /// </summary>
+        public void Close()
+        {
+            _dbConnection.Close();
+        }
+
+        /// <summary>
+        /// Performs application-defined tasks associated with freeing, releasing or resetting unmanaged resources.
+        /// </summary>
         public void Dispose()
         {
             _dbConnection.Dispose();
