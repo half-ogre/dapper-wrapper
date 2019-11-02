@@ -1,3 +1,5 @@
+_**I am no longer maintaining this repository. If you have a fork or alternative for this library you think is good to direct people to, please let me know.**_
+
 DapperWrapper is a library that wraps the [Dapper](http://code.google.com/p/dapper-dot-net/) extension methods on `IDbConnection` to make unit testing easier.
 
 Why bother? Because stubbing the extension methods used in a method-under-unit-test is a pain in the ass. For instance, you can't just use a library like [Moq](http://code.google.com/p/moq/) to stub the `.Query` extension method on a fake `IDbConnection`. To work around this, I introduce a new abstraction, `IDbExecutor`.
