@@ -33,8 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Dapper">
-      <HintPath>..\packages\Dapper.1.8\lib\net40\Dapper.dll</HintPath>
+    <Reference Include="Dapper, Version=1.12.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Dapper.1.12.1\lib\net40\Dapper.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,8 +47,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GridReaderWrapper.cs" />
     <Compile Include="IDbExecutor.cs" />
     <Compile Include="IDbExecutorFactory.cs" />
+    <Compile Include="IGridReaderWrapper.cs" />
     <Compile Include="ITransactionScope.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlExecutor.cs" />
